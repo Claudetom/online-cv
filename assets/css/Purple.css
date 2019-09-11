@@ -1,0 +1,778 @@
+/*! 
+ * Base du thème :  jekyll
+ * Version: 2.1
+ * Author: Thomas.C
+ * Copyright: claudetom
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #545E6C;
+    background: #f5f5f5;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+    box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #6e3852;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #3c1e2c;
+    }
+
+    a:focus {
+        text-decoration: none;
+    }
+
+p {
+    line-height: 1.5;
+}
+
+ol ul {
+    list-style-type: disc;
+}
+
+.wrapper {
+    background: #A15277;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 2px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Ajout mode degrade */
+    background-color: #A15277;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A15277), to(#81425F));
+    background-image: -webkit-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: -moz-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: -o-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: linear-gradient(to bottom, #A15277 0%, #81425F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A15277', endColorstr='#81425F',GradientType=0 );
+}
+
+.sidebar-wrapper {
+    background: #A15277;
+    position: absolute;
+    right: 0;
+    width: 295px;
+    height: 100%;
+    min-height: 800px;
+    color: #fff;
+    z-index: 3;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Ajout mode degrade */
+    background-color: #A15277;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A15277), to(#81425F));
+    background-image: -webkit-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: -moz-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: -o-linear-gradient(top, #A15277 0%, #81425F 100%);
+    background-image: linear-gradient(to bottom, #A15277 0%, #81425F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A15277', endColorstr='#81425F',GradientType=0 );
+}
+
+    .sidebar-wrapper a {
+        color: #fff;
+    }
+
+    .sidebar-wrapper .profile-container {
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #fff;
+    }
+
+    .sidebar-wrapper .name {
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-wrapper .tagline {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .sidebar-wrapper .profile {
+        margin-bottom: 15px;
+    }
+
+
+    /* Ajout pour le nouveau design contact */
+    .sidebar-wrapper hr {
+        margin: 15px auto;
+        height: 2px;
+        background-color: rgba(0,0,0,0.2);
+        border: none; /*on supprime le style par défaut*/
+    }
+
+    .sidebar-wrapper .contact-container .item {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .contact-container .meta {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+        .sidebar-wrapper .contact-container .meta .svg-inline--fa {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+    .sidebar-wrapper .contact-container .items {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .contact-container .typePoste {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 400;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+    /* Ajout pour le nouveau design contact */
+
+
+    .sidebar-wrapper .contact-list .svg-inline--fa {
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .sidebar-wrapper .contact-list li {
+        margin-bottom: 15px;
+    }
+
+        .sidebar-wrapper .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+
+    .sidebar-wrapper .contact-list .mobilite .txtMobilite {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .contact-list .technologies .txtTechnologies {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .container-block {
+        padding: 30px;
+    }
+
+    .sidebar-wrapper .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-wrapper .education-container .item {
+        margin-bottom: 15px;
+    }
+
+        .sidebar-wrapper .education-container .item:last-child {
+            margin-bottom: 0;
+        }
+
+    .sidebar-wrapper .education-container .meta {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .education-container .time {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .sidebar-wrapper .languages-container .lang-desc {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .sidebar-wrapper .languages-list {
+        margin-bottom: 0;
+    }
+
+        .sidebar-wrapper .languages-list li {
+            margin-bottom: 10px;
+        }
+
+            .sidebar-wrapper .languages-list li:last-child {
+                margin-bottom: 0;
+            }
+
+    .sidebar-wrapper .interests-list {
+        margin-bottom: 0;
+    }
+
+        .sidebar-wrapper .interests-list li {
+            margin-bottom: 5px; 
+        }
+
+            .sidebar-wrapper .interests-list li:last-child {
+                margin-bottom: 0;
+            }
+
+.main-wrapper {
+    background: #fff;
+    padding: 60px;
+    padding-right: 300px;
+    opacity: 0.95;
+}
+
+    .main-wrapper .section-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        color: #6e3852;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+        .main-wrapper .section-title .icon-holder {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            display: inline-block;
+            color: #fff;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #6e3852;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            top: -8px;
+        }
+
+            .main-wrapper .section-title .icon-holder .svg-inline--fa {
+                font-size: 14px;
+                margin-top: 6px;
+            }
+
+    .main-wrapper .section {
+        margin-bottom: 60px;
+    }
+
+    .main-wrapper .degree-title {
+        color: #3F4650;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .main-wrapper .experiences-section .item {
+        margin-bottom: 30px;
+    }
+
+    .main-wrapper .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+
+    .main-wrapper .job-title {
+        color: #3F4650;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .main-wrapper .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #97AAC3;
+    }
+
+    .main-wrapper .company {
+        color: #97AAC3;
+    }
+
+    .main-wrapper .metier {
+        font-style: italic;
+        color: #97aac3;
+        margin-bottom: 1px;
+    }
+
+    .main-wrapper .metierDescription {
+        font-style: italic;
+        color: #7f8b9b;
+    }
+
+    .main-wrapper .experiences-section .item .details {
+        margin-top: 10px;
+    }
+
+        /* Pour les actions du sous détail */
+        .main-wrapper .experiences-section .item .details .action-sousDetail {
+            font-size: 18px;
+            color: #6e3852;
+            cursor: pointer;
+            margin-top: -17px;
+        }
+
+            .main-wrapper .experiences-section .item .details .action-sousDetail .sousDetail-title {
+                font-size: 14px;
+                font-weight: normal;
+                color: #6e3852;
+                position: relative;
+                margin-top: 0;
+                margin-bottom: 2px;
+            }
+
+        .main-wrapper .experiences-section .item .details .section-sousDetail {
+            display: none;
+        }
+    /* Pour les actions du sous détail */
+
+    .main-wrapper .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .main-wrapper .projects-section .intro {
+        margin-bottom: 30px;
+    }
+
+    .main-wrapper .projects-section .item {
+        margin-bottom: 15px;
+    }
+
+.skillset .item {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.skillset .level-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.skillset .upper-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+    .skillset .upper-row .titleSpecTechnique {
+        color: #3F4650;
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+/* Section compétences repliable */
+.skillset .action-skill {
+    color: #3F4650;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.skillset .section-skill {
+    display: none;
+}
+/* Section compétences repliable */
+
+.skillset .level-bar {
+    height: 12px;
+    background: #f5f5f5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.skillset .theme-progress-bar {
+    background: #9E5075;
+}
+
+.main-wrapper .interests-section .item {
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 30px;
+}
+
+    .footer .copyright {
+        line-height: 1.6;
+        color: #545E6C;
+        font-size: 13px;
+    }
+
+    .footer .fa-heart {
+        color: #fb866a;
+    }
+
+/*  - DEBUT - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
+.bars {
+    width: 95%;
+	float: inherit;
+    padding: 0;
+    text-align: left;
+	display: contents;
+}
+
+.bars .skills {
+    margin-top: 1px;
+    list-style: none;
+}
+
+.bars li {
+    position: relative;
+    margin-bottom: 24px;
+    background: #ccc;
+    height: 22px;
+    border-radius: 3px;
+}
+
+.bars li em {
+	font-size: 14px;
+	font-weight: 700;
+	font-style: italic;
+    color: #F8F9FA;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+	background: #9E5075;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 3px 0 0 3px;
+}
+
+.percentage50 {
+  	width: 50%;
+  	-moz-animation: percentage50 2s ease;
+  	-webkit-animation: percentage50 2s ease;
+}
+.percentage55 {
+    width: 55%;
+    -moz-animation: percentage55 2s ease;
+    -webkit-animation: percentage55 2s ease;
+}
+.percentage60 {
+    width: 60%;
+    -moz-animation: percentage60 2s ease;
+    -webkit-animation: percentage60 2s ease;
+}
+.percentage65 {
+    width: 65%;
+    -moz-animation: percentage65 2s ease;
+    -webkit-animation: percentage65 2s ease;
+}
+.percentage70 {
+    width: 75%;
+    -moz-animation: percentage70 2s ease;
+    -webkit-animation: percentage70 2s ease;
+}
+.percentage75 {
+    width: 75%;
+    -moz-animation: percentage75 2s ease;
+    -webkit-animation: percentage75 2s ease;
+}
+.percentage80 {
+    width: 80%;
+    -moz-animation: percentage80 2s ease;
+    -webkit-animation: percentage80 2s ease;
+}
+.percentage85 {
+    width: 85%;
+    -moz-animation: percentage85 2s ease;
+    -webkit-animation: percentage85 2s ease;
+}
+.percentage90 {
+    width: 90%;
+    -moz-animation: percentage90 2s ease;
+    -webkit-animation: percentage90 2s ease;
+}
+.percentage95 {
+    width: 95%;
+    -moz-animation: percentage95 2s ease;
+    -webkit-animation: percentage95 2s ease;
+}
+.percentage100 {
+    width: 100%;
+    -moz-animation: percentage100 2s ease;
+    -webkit-animation: percentage100 2s ease;
+}
+
+@-moz-keyframes percentage50 {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes percentage55 {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-moz-keyframes percentage60 {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes percentage65 {
+  0%   { width: 0px;  }
+  100% { width: 65%;  }
+}
+@-moz-keyframes percentage70 {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes percentage75 {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-moz-keyframes percentage80 {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes percentage85 {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-moz-keyframes percentage90 {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes percentage95 {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-moz-keyframes percentage100 {
+  0%   { width: 0px;  }
+  100% { width: 100%;  }
+}
+
+@-webkit-keyframes percentage50 {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes percentage55 {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes percentage60 {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes percentage65 {
+  0%   { width: 0px;  }
+  100% { width: 65%;  }
+}
+@-webkit-keyframes percentage70 {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes percentage75 {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-webkit-keyframes percentage80 {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes percentage85 {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes percentage90 {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes percentage95 {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+@-webkit-keyframes percentage100 {
+  0%   { width: 0px;  }
+  100% { width: 100%;  }
+}
+
+/* Fleche haut pour monter */
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+	position: relative;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.icon-up-open:before {
+    content: '\e803';
+}
+
+a, a:visited {
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+#go-top {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+#go-top a:hover {
+    background-color: #A15277;
+	
+	opacity: 1.0;
+	webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#go-top a {
+	opacity:0.3;
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #81425F;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+    border-radius: 100%;
+}
+
+.fa-fleche-haut{
+	margin-top: .4em;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.4em;
+    text-align: center;
+    line-height: 1.4em;
+    margin-left: .7em;
+}
+/* Fleche haut pour monter */
+/*  - FIN - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
+
+/* pour les boutons du menu jump */
+.jumpto-title, .jumpto-close a, .jumpto-close a:visited {
+    background: #81425F;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+    }
+
+    .wrapper {
+        -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-wrapper {
+        padding: 30px;
+    }
+
+        .main-wrapper .time {
+            position: static;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .main-wrapper .upper-row {
+            margin-bottom: 0;
+        }
+}
+
+@media (min-width: 992px) {
+    .skillset .level-title {
+        display: inline-block;
+        float: left;
+        width: 30%;
+        margin-bottom: 0;
+    }
+}

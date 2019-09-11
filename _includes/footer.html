@@ -1,0 +1,26 @@
+{% assign footer = site.data.data.footer %}
+{% if footer %}
+<footer class="footer">
+
+	<div class="row">
+		<!-- fleche pour retourner en haut -->
+        <div id="go-top">
+			<a class="smoothscroll" title="Back to Top" href="#Top">
+				<div class="fa-fleche-haut">
+					<i class="fas fa-angle-up fa-2x"></i>
+				</div>
+			</a>
+		</div>
+	</div>
+
+    <div class="text-center">
+
+        {% if footer.isDisplay %}
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">{{ footer.text }}</small>
+        {% else %}
+        <small class="copyright"> &copy; Claudetom - 2019 - (I realized the CV with <a href="https://jekyllrb.com/" target="_blank" rel="nofollow"> jekyll</a>) </small>
+        {% endif %}
+    </div><!--//container-->
+</footer><!--//footer-->
+{% endif %}

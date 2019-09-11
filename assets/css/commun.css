@@ -1,0 +1,450 @@
+/*! 
+ * Base du thème :  jekyll
+ * Version: 2.1
+ * Author: Thomas.C
+ * Copyright: claudetom
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+    box-shadow: inset 0 3px 30px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:focus {
+        text-decoration: none;
+    }
+
+p {
+    line-height: 1.5;
+}
+
+ol ul {
+    list-style-type: disc;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 2px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-wrapper {
+    position: absolute;
+    right: 0;
+    width: 295px;
+    height: 100%;
+    min-height: 800px;
+    z-index: 3;
+}
+
+    .sidebar-wrapper a {
+    }
+
+    .sidebar-wrapper .profile-container {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .sidebar-wrapper .name {
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-wrapper .tagline {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .sidebar-wrapper .profile {
+        margin-bottom: 15px;
+    }
+
+
+    /* Ajout pour le nouveau design contact */
+    .sidebar-wrapper hr {
+        margin: 15px auto;
+        /*width: 50%;*/
+        height: 2px;
+        border: none; /*on supprime le style par défaut*/
+    }
+
+    .sidebar-wrapper .contact-container .item {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .contact-container .meta {
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+        .sidebar-wrapper .contact-container .meta .svg-inline--fa {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+    .sidebar-wrapper .contact-container .items {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .contact-container .typePoste {
+        font-weight: 400;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+    /* Ajout pour le nouveau design contact */
+
+    .sidebar-wrapper .contact-list .svg-inline--fa {
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .sidebar-wrapper .contact-list li {
+        margin-bottom: 15px;
+    }
+
+        .sidebar-wrapper .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+
+    .sidebar-wrapper .contact-list .mobilite .txtMobilite {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .contact-list .technologies .txtTechnologies {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .container-block {
+        padding: 30px;
+    }
+
+    .sidebar-wrapper .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-wrapper .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-wrapper .education-container .item {
+        margin-bottom: 15px;
+    }
+
+        .sidebar-wrapper .education-container .item:last-child {
+            margin-bottom: 0;
+        }
+
+    .sidebar-wrapper .education-container .meta {
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .sidebar-wrapper .education-container .time {
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .sidebar-wrapper .languages-container .lang-desc {
+    }
+
+    .sidebar-wrapper .languages-list {
+        margin-bottom: 0;
+    }
+
+        .sidebar-wrapper .languages-list li {
+            margin-bottom: 10px;
+        }
+
+            .sidebar-wrapper .languages-list li:last-child {
+                margin-bottom: 0;
+            }
+
+    .sidebar-wrapper .interests-list {
+        margin-bottom: 0;
+    }
+
+        .sidebar-wrapper .interests-list li {
+            margin-bottom: 5px; /*10px;*/
+        }
+
+            .sidebar-wrapper .interests-list li:last-child {
+                margin-bottom: 0;
+            }
+
+.main-wrapper {
+    padding: 60px;
+    padding-right: 300px;
+    opacity: 0.95;
+}
+
+    .main-wrapper .section-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+        .main-wrapper .section-title .icon-holder {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            display: inline-block;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            top: -8px;
+        }
+
+            .main-wrapper .section-title .icon-holder .svg-inline--fa {
+                font-size: 14px;
+                margin-top: 6px;
+            }
+
+    .main-wrapper .section {
+        margin-bottom: 60px;
+    }
+
+    .main-wrapper .degree-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .main-wrapper .experiences-section .item {
+        margin-bottom: 30px;
+    }
+
+    .main-wrapper .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+
+    .main-wrapper .job-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .main-wrapper .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-wrapper .company {
+    }
+
+    .main-wrapper .metier {
+        font-style: italic;
+        margin-bottom: 1px;
+    }
+
+    .main-wrapper .metierDescription {
+        font-style: italic;
+    }
+
+    .main-wrapper .experiences-section .item .details {
+        margin-top: 10px;
+    }
+
+        /* Pour les actions du sous détail */
+        .main-wrapper .experiences-section .item .details .action-sousDetail {
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: -17px;
+        }
+
+            .main-wrapper .experiences-section .item .details .action-sousDetail .sousDetail-title {
+                font-size: 14px;
+                font-weight: normal;
+                position: relative;
+                margin-top: 0;
+                margin-bottom: 2px;
+            }
+
+        .main-wrapper .experiences-section .item .details .section-sousDetail {
+            display: none;
+        }
+    /* Pour les actions du sous détail */
+
+    .main-wrapper .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .main-wrapper .projects-section .intro {
+        margin-bottom: 30px;
+    }
+
+    .main-wrapper .projects-section .item {
+        margin-bottom: 15px;
+    }
+
+.skillset .item {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.skillset .level-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.skillset .upper-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+    .skillset .upper-row .titleSpecTechnique {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+/* Section compétences repliable */
+.skillset .action-skill {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.skillset .section-skill {
+    display: none;
+}
+/* Section compétences repliable */
+
+.skillset .level-bar {
+    height: 12px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.skillset .theme-progress-bar {
+}
+
+.main-wrapper .interests-section .item {
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 30px;
+    /*padding-top: 60px;*/
+}
+
+    .footer .copyright {
+        line-height: 1.6;
+        font-size: 13px;
+    }
+
+    .footer .fa-heart {
+    }
+
+@media (max-width: 767.98px) {
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+    }
+
+    .wrapper {
+        -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-wrapper {
+        padding: 30px;
+    }
+
+        .main-wrapper .time {
+            position: static;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .main-wrapper .upper-row {
+            margin-bottom: 0;
+        }
+}
+
+@media (min-width: 992px) {
+    .skillset .level-title {
+        display: inline-block;
+        float: left;
+        width: 30%;
+        margin-bottom: 0;
+    }
+}

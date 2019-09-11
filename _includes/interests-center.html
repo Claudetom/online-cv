@@ -1,0 +1,22 @@
+{% assign interestsCenter = site.data.data.interests-center %}
+{% if interestsCenter %}
+  {% if interestsCenter.itemLong %}
+<section class="section interests-section jumpto-block">
+
+    <h2 class="section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-info fa-stack-1x fa-inverse"></i>
+        </span>
+        Interets personnels
+    </h2>
+
+    <div class="item">
+        <div class="details">
+            {{ interestsCenter.itemLong | markdownify }}
+        </div>
+    </div><!--//item-->
+
+</section><!--//section-->
+  {% endif %}
+{% endif %}
