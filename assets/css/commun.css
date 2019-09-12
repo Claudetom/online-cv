@@ -59,6 +59,9 @@ ol ul {
     height: 100%;
     min-height: 800px;
     z-index: 3;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
     .sidebar-wrapper a {
@@ -91,7 +94,6 @@ ol ul {
     /* Ajout pour le nouveau design contact */
     .sidebar-wrapper hr {
         margin: 15px auto;
-        /*width: 50%;*/
         height: 2px;
         border: none; /*on supprime le style par défaut*/
     }
@@ -123,7 +125,9 @@ ol ul {
         margin-top: 0;
         font-size: 14px;
     }
+
     /* Ajout pour le nouveau design contact */
+
 
     .sidebar-wrapper .contact-list .svg-inline--fa {
         margin-right: 5px;
@@ -213,7 +217,7 @@ ol ul {
     }
 
         .sidebar-wrapper .interests-list li {
-            margin-bottom: 5px; /*10px;*/
+            margin-bottom: 5px;
         }
 
             .sidebar-wrapper .interests-list li:last-child {
@@ -245,9 +249,6 @@ ol ul {
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
             border-radius: 50%;
-            -moz-background-clip: padding;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
             text-align: center;
             font-size: 16px;
             position: relative;
@@ -388,9 +389,6 @@ ol ul {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
 }
 
 .skillset .theme-progress-bar {
@@ -402,7 +400,6 @@ ol ul {
 
 .footer {
     padding: 30px;
-    /*padding-top: 60px;*/
 }
 
     .footer .copyright {
@@ -412,6 +409,417 @@ ol ul {
 
     .footer .fa-heart {
     }
+
+
+/*  - DEBUT - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
+.bars {
+    width: 95%;
+    float: inherit;
+    padding: 0;
+    text-align: left;
+    display: contents;
+}
+
+    .bars .skills {
+        margin-top: 1px;
+        list-style: none;
+    }
+
+    .bars li {
+        position: relative;
+        margin-bottom: 24px;
+        height: 22px;
+        border-radius: 3px;
+    }
+
+        .bars li em {
+            font-size: 14px;
+            font-weight: 700;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            top: 2px;
+            left: 10px;
+        }
+
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 3px 0 0 3px;
+}
+
+.percentage50 {
+    width: 50%;
+    -moz-animation: percentage50 2s ease;
+    -webkit-animation: percentage50 2s ease;
+}
+
+.percentage55 {
+    width: 55%;
+    -moz-animation: percentage55 2s ease;
+    -webkit-animation: percentage55 2s ease;
+}
+
+.percentage60 {
+    width: 60%;
+    -moz-animation: percentage60 2s ease;
+    -webkit-animation: percentage60 2s ease;
+}
+
+.percentage65 {
+    width: 65%;
+    -moz-animation: percentage65 2s ease;
+    -webkit-animation: percentage65 2s ease;
+}
+
+.percentage70 {
+    width: 75%;
+    -moz-animation: percentage70 2s ease;
+    -webkit-animation: percentage70 2s ease;
+}
+
+.percentage75 {
+    width: 75%;
+    -moz-animation: percentage75 2s ease;
+    -webkit-animation: percentage75 2s ease;
+}
+
+.percentage80 {
+    width: 80%;
+    -moz-animation: percentage80 2s ease;
+    -webkit-animation: percentage80 2s ease;
+}
+
+.percentage85 {
+    width: 85%;
+    -moz-animation: percentage85 2s ease;
+    -webkit-animation: percentage85 2s ease;
+}
+
+.percentage90 {
+    width: 90%;
+    -moz-animation: percentage90 2s ease;
+    -webkit-animation: percentage90 2s ease;
+}
+
+.percentage95 {
+    width: 95%;
+    -moz-animation: percentage95 2s ease;
+    -webkit-animation: percentage95 2s ease;
+}
+
+.percentage100 {
+    width: 100%;
+    -moz-animation: percentage100 2s ease;
+    -webkit-animation: percentage100 2s ease;
+}
+
+@-moz-keyframes percentage50 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@-moz-keyframes percentage55 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+@-moz-keyframes percentage60 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes percentage65 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes percentage70 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes percentage75 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@-moz-keyframes percentage80 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@-moz-keyframes percentage85 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes percentage90 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes percentage95 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@-moz-keyframes percentage100 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes percentage50 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes percentage55 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+@-webkit-keyframes percentage60 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes percentage65 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes percentage70 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes percentage75 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@-webkit-keyframes percentage80 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes percentage85 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes percentage90 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes percentage95 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@-webkit-keyframes percentage100 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Fleche haut pour monter */
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .row:before, .row:after {
+        content: " ";
+        display: table;
+    }
+
+.icon-up-open:before {
+    content: '\e803';
+}
+
+a, a:visited {
+    text-decoration: none;
+    outline: 0;
+}
+
+#go-top {
+    opacity: 0.9;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 0;
+}
+
+    #go-top:hover {
+        z-index: 3;
+    }
+
+    #go-top a {
+        opacity: 0.2;
+        text-decoration: none;
+        border: 0 none;
+        display: block;
+        width: 60px;
+        height: 60px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        font-size: 21px;
+        line-height: 60px;
+        border-radius: 100%;
+    }
+
+        #go-top a:hover {
+            opacity: 1.0;
+            webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            /* shadow */
+            -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+.fa-fleche-haut {
+    margin-top: .4em;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.4em;
+    text-align: center;
+    line-height: 1.4em;
+    margin-left: .7em;
+}
+/* Fleche haut pour monter */
+/*  - FIN - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
+
+/* pour les boutons du menu jump */
+.jumpto-title, .jumpto-close a, .jumpto-close a:visited {
+}
 
 @media (max-width: 767.98px) {
     .sidebar-wrapper {
