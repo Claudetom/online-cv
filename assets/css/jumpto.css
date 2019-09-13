@@ -17,6 +17,15 @@ body {
     right: 0;
     float: right;
     z-index: 30;
+	/* shadow et transition */
+	webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
     .jumpto-subnav .jumpto-second {
