@@ -279,163 +279,176 @@ publications:
         authors: Thomas Claude
         conference: Développement .NET
 
-sectionSkills:
-    titleDeveloppement: Développement
-    titleMethodes: Méthodes
-    titleProgiciels: progiciels
-    titleSystemes: Systèmes
-    titleSgdb: Système de gestion de base de données
-    titleOutils: Outils
-    #titleServer:# Serveur Web & Protocoles
-    closedSectionDeveloppement: False
-    closedSectionMethodes: False
-    closedSectionProgiciels: True
-    closedSectionSystemes: True
-    closedSectionSgdb: True
-    closedSectionOutils: True
-
-
 skills:
     title: Compétences Techniques
 
-    developpement:
-      - name: C# & VB.NET & VB6
-        level: 95%
-        value: 96
+    tabSkills:
+      - title: Développement
+        closedSection: False
+        isDisplay: True
+        id: developpement
+        pratices:
+          - name: C# & VB.NET & VB6
+            level: 95%
+            value: 96
 
-      - name: WPF
-        level: 60%
-        value: 61
+          - name: WPF
+            level: 60%
+            value: 61
 
-      - name: ASP.NET & MVC
-        level: 85%
-        value: 86
-        
-      - name: HTML5 & CSS3
-        level: 85%
-        value: 86
+          - name: ASP.NET & MVC
+            level: 85%
+            value: 86
 
-      - name: JQUERY & JAVASCRIPT
-        level: 85%
-        value: 86
-        
-      - name: Web Service & API / RESTfull
-        level: 85%
-        value: 86
+          - name: HTML5 & CSS3
+            level: 85%
+            value: 86
 
-      - name: Framework 4.x & Net Core 2.x/3.0
-        level: 85%
-        value: 86
+          - name: JQUERY & JAVASCRIPT
+            level: 85%
+            value: 86
 
-      - name: BOOTSTRAP & ANGULARJS & Kendo UI JS
-        level: 60%
-        value: 61
+          - name: Web Service & API / RESTfull
+            level: 85%
+            value: 86
 
-      - name:  PHP
-        level: 60%
-        value: 61
+          - name: Framework 4.x & Net Core 2.x/3.0
+            level: 85%
+            value: 86
 
-      - name: Vue.js
-        level: 20%
-        value: 21
+          - name: BOOTSTRAP & ANGULARJS & Kendo UI JS
+            level: 60%
+            value: 61
 
-      - name: T-SQL
-        level: 65%
-        value: 66
-        
-      - name: XAMARIN
-        level: 60%
-        value: 61
+          - name:  PHP
+            level: 60%
+            value: 61
 
-      - name: XML & CSV & JSON
-        level: 85%
-        value: 86
+          - name: Vue.js
+            level: 20%
+            value: 21
 
-    methodes:
-      - name: DESIGN PATTERNS (MVC)
-        level: 85%
-        value: 86
+          - name: T-SQL
+            level: 65%
+            value: 66
 
-      - name: AGILE / SCRUM
-        level: 60%
-        value: 61
+          - name: XAMARIN
+            level: 60%
+            value: 61
 
-      - name: UML
-        level: 70%
-        value: 71
+          - name: XML & CSV & JSON
+            level: 85%
+            value: 86
+  
+      - title: Méthodes
+        closedSection: False
+        isDisplay: True
+        id: methodes
+        pratices:
+          - name: DESIGN PATTERNS (MVC)
+            level: 85%
+            value: 86
 
-    progiciels:
-      - name: VISUAL STUDIO & VISUAL STUDIO 2017/2019
-        level: 95%
-        value: 96
+          - name: AGILE / SCRUM
+            level: 60%
+            value: 61
 
-      - name: VISUAL STUDIO CODE & PHPSTORM
-        level: 60%
-        value: 61
+          - name: UML
+            level: 70%
+            value: 71
 
-      - name: REPORTBUILDER & Visual Basic MS Office
-        level: 75%
-        value: 76
+      - title: progiciels
+        closedSection: True
+        isDisplay: True
+        id: progiciels
+        pratices:
+          - name: VISUAL STUDIO & VISUAL STUDIO 2017/2019
+            level: 95%
+            value: 96
 
-      - name: CRYSTALREPORT & REDIS / RAVENDB & MONGODB
-        level: 60%
-        value: 61
+          - name: VISUAL STUDIO CODE & PHPSTORM
+            level: 60%
+            value: 61
 
-    systemes:
-      - name: WINDOWS 7/10
-        level: 95%
-        value: 96
+          - name: REPORTBUILDER & Visual Basic MS Office
+            level: 75%
+            value: 76
 
-      - name: ANDROID & LINUX
-        level: 60%
-        value: 61 
+          - name: CRYSTALREPORT & REDIS / RAVENDB & MONGODB
+            level: 60%
+            value: 61
 
-    sgdb:
-      - name: SQL SERVER 2017/2019
-        level: 85%
-        value: 86
+      - title: Systèmes
+        closedSection: True
+        isDisplay: True
+        id: systemes
+        pratices:
+          - name: WINDOWS 7/10
+            level: 95%
+            value: 96
 
-      - name: MS ACCESS
-        level: 85%
-        value: 86
+          - name: ANDROID & LINUX
+            level: 60%
+            value: 61
 
-      - name: SQL AZURE & MySQL
-        level: 60%
-        value: 61
+      - title: Système de gestion de base de données
+        closedSection: True
+        isDisplay: True
+        id: sgbd
+        pratices:
+          - name: SQL SERVER 2017/2019
+            level: 85%
+            value: 86
 
-    outils:
-      - name: POSTMAN
-        level: 75%
-        value: 76
+          - name: MS ACCESS
+            level: 85%
+            value: 86
 
-      - name: SWAGGER
-        level: 60%
-        value: 61
+          - name: SQL AZURE & MySQL
+            level: 60%
+            value: 61
 
-      - name: VSTS & TFS
-        level: 85%
-        value: 86
+      - title: Outils
+        closedSection: True
+        isDisplay: True
+        id: outils
+        pratices:
+          - name: POSTMAN
+            level: 75%
+            value: 76
 
-      - name: GIT
-        level: 75%
-        value: 76
+          - name: SWAGGER
+            level: 60%
+            value: 61
 
-      - name: OFFICE
-        level: 85%
-        value: 86
+          - name: VSTS & TFS
+            level: 85%
+            value: 86
 
-    server:
-      - name: WAMPSERVER & VAGRANT & IIS
-        level: 85%
-        value: 86
+          - name: GIT
+            level: 75%
+            value: 76
 
-      - name: FTP
-        level: 85%
-        value: 86
+          - name: OFFICE
+            level: 85%
+            value: 86
 
-      - name: APACHE & TCPIP & HTTP / HTTPS
-        level: 60%
-        value: 61
+      - title: Serveur Web & Protocoles
+        closedSection: True
+        isDisplay: False
+        id: server
+        pratices:
+          - name: WAMPSERVER & VAGRANT & IIS
+            level: 85%
+            value: 86
+
+          - name: FTP
+            level: 85%
+            value: 86
+
+          - name: APACHE & TCPIP & HTTP / HTTPS
+            level: 60%
+            value: 61
 
 # Interets perso
 interests-center:

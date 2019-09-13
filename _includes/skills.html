@@ -1,7 +1,9 @@
 ﻿{% assign skills = site.data.data.skills %}
-{% assign sectionSkills = site.data.data.sectionSkills %}
+{% assign tabSkills = site.data.data.skills.tabSkills %}
 
-{% if skills %}
+{% comment %} doc : https://irz.fr/jekyll-liquid {% endcomment %}
+
+{% if skills and tabSkills %}
 <section class="skills-section section jumpto-block">
 
     <h2 class="section-title">
@@ -14,268 +16,50 @@
 
     <div class="skillset">
 
-        {% if skills.developpement %}
-        {% if sectionSkills.titleDeveloppement %}
-        {% if sectionSkills.closedSectionDeveloppement %}
-        <div class="upper-row action-skill" data-id="{{ sectionSkills.titleDeveloppement }}">
+        {% comment %} parcours le tableau tabSkills {% endcomment %}
+        {% for skill in tabSkills %}
+
+        {% comment %} celui-ci est affichable et titre présent {% endcomment %}
+        {% if skill.isDisplay and skill.title %}
+
+        {% comment %} le tableau de pratices est-il pas vide {% endcomment %}
+        {% if skill.pratices %}
+
+        {% comment %} la section est-elle de type depliable {% endcomment %}
+        {% if skill.closedSection %}
+        <div class="upper-row action-skill" data-id="{{ skill.id }}">
             <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleDeveloppement }}</span>
+            <span class="titleSpecTechnique">{{ skill.title }}</span>
         </div>
 
-        <div id="{{ sectionSkills.titleDeveloppement }}" class="section-skill">
-            {% for skill in skills.developpement %}
+        {% comment %} balise div d'ouverture repliable {% endcomment %}
+        <div id="{{ skill.id }}" class="section-skill">
+            {% else %}
+            <div class="upper-row">
+                <h3 class="titleSpecTechnique">{{ skill.title }}</h3>
+            </div>
 
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
+            {% comment %} balise div d'ouverture non repliable {% endcomment %}
+            <div id="{{ skill.id }}">
+                {% endif %}
+
+                {% comment %} parcours le tableau pratices {% endcomment %}
+                {% for pratice in skill.pratices %}
+                <div class="item">
+                    <h3 class="level-title">{{ pratice.name }}</h3>
+                    <div class="progress level-bar">
+                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ pratice.level }}" aria-valuenow="{{ pratice.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><!--//level-bar-->
+                </div><!--//item-->
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% endif %}
+
             {% endfor %}
+
         </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleDeveloppement }}</h3>
-        </div>
-
-        {% for skill in skills.developpement %}
-
-        <div class="item">
-
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.methodes %}
-        {% if sectionSkills.titleMethodes %}
-        {% if sectionSkills.closedSectionMethodes %}
-        <div class="upper-row action-skill" data-id="{{ sectionSkills.titleMethodes }}">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleMethodes }}</span>
-        </div>
-
-        <div id="{{ sectionSkills.titleMethodes }}" class="section-skill">
-            {% for skill in skills.methodes %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleMethodes }}</h3>
-        </div>
-
-        {% for skill in skills.methodes %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.progiciels %}
-        {% if sectionSkills.titleProgiciels %}
-        {% if sectionSkills.closedSectionProgiciels %}
-        <div class="upper-row action-skill" data-id="{{ sectionSkills.titleProgiciels }}">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleProgiciels }}</span>
-        </div>
-
-        <div id="{{ sectionSkills.titleProgiciels }}" class="section-skill">
-            {% for skill in skills.progiciels %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleProgiciels }}</h3>
-        </div>
-
-        {% for skill in skills.progiciels %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.systemes %}
-        {% if sectionSkills.titleSystemes %}
-        {% if sectionSkills.closedSectionSystemes %}
-        <div class="upper-row action-skill" data-id="Systemes">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleSystemes }}</span>
-        </div>
-
-        <div id="Systemes" class="section-skill">
-            {% for skill in skills.systemes %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleSystemes }}</h3>
-        </div>
-
-        {% for skill in skills.systemes %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.sgdb %}
-        {% if sectionSkills.titleSgdb %}
-        {% if sectionSkills.closedSectionSgdb %}
-        <div class="upper-row action-skill" data-id="sgdb">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleSgdb }}</span>
-        </div>
-
-        <div id="sgdb" class="section-skill">
-            {% for skill in skills.sgdb %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleSgdb }}</h3>
-        </div>
-
-        {% for skill in skills.sgdb %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.outils %}
-        {% if sectionSkills.titleOutils %}
-        {% if sectionSkills.closedSectionOutils %}
-        <div class="upper-row action-skill" data-id="{{ sectionSkills.titleOutils }}">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleOutils }}</span>
-        </div>
-
-        <div id="{{ sectionSkills.titleOutils }}" class="section-skill">
-            {% for skill in skills.outils %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleOutils }}</h3>
-        </div>
-
-        {% for skill in skills.outils %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-        {% if skills.server %}
-        {% if sectionSkills.titleServer %}
-        {% if sectionSkills.closedSectionServer %}
-        <div class="upper-row action-skill" data-id="{{ sectionSkills.titleServer }}">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ sectionSkills.titleServer }}</span>
-        </div>
-
-        <div id="{{ sectionSkills.titleServer }}" class="section-skill">
-            {% for skill in skills.server %}
-
-            <div class="item">
-                <h3 class="level-title">{{ skill.name }}</h3>
-                <div class="progress level-bar">
-                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><!--//level-bar-->
-            </div><!--//item-->
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="upper-row">
-            <h3 class="titleSpecTechnique">{{ sectionSkills.titleServer }}</h3>
-        </div>
-
-        {% for skill in skills.server %}
-
-        <div class="item">
-            <h3 class="level-title">{{ skill.name }}</h3>
-            <div class="progress level-bar">
-                <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div><!--//level-bar-->
-        </div><!--//item-->
-        {% endfor %}
-
-        {% endif %}
-        {% endif %}
-        {% endif %}
-
-    </div>
 
 </section><!--//skills-section-->
 {% endif %}
