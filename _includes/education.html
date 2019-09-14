@@ -1,4 +1,4 @@
-﻿{% assign education = site.data.data.education %}
+{% assign education = site.data.data.education %}
 {% if education %}
   {% if site.data.data.sidebar.education %}
 <div class="education-container container-block">
@@ -17,7 +17,7 @@
 
 </div><!--//education-container-->
   {% else %}
-<section class="section educations-section jumpto-block">
+<section class="section educations-section jumpto-block" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: scrollReveal; if: click, do: rubberBand animated, after: removeAnim">
 
     <h2 class="section-title">
         <span class="fa-stack fa-xs">

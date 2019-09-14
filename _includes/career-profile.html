@@ -1,6 +1,6 @@
 {% assign career-profile = site.data.data.career-profile %}
 {% if career-profile %}
-<section class="section summary-section jumpto-block">
+<section class="section summary-section jumpto-block" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: scrollReveal; if: click, do: rubberBand animated, after: removeAnim">
 
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
