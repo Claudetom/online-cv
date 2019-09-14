@@ -1,10 +1,9 @@
 {% assign sidebar = site.data.data.sidebar %}
 <div class="sidebar-wrapper">
 
-  <div class="profile-container">
-
+  <div class="profile-container" data-anijs="if: scroll, on:window, do: flipInX animated, before: scrollReveal, after: removeAnim; if: click, do: rubberBand animated, after: removeAnim">
     {% if sidebar.name %}
-    <img class="avatar" src="{{ site.url }}assets/images/{{ sidebar.avatar }}" alt="profile picture" />
+    <img class="avatar" src="{{ '/assets/images/'| append: sidebar.avatar | relative_url }}" alt="profile picture" />
     {% endif %}
 
     {% if sidebar.name %}

@@ -13,10 +13,13 @@ $(document).ready(function () {
             }, 800);
 
         });
+		
+		/* ajout dynamiquement au objets avec la class section, l'animation avec AniJS */ 
+        //$('.section').attr("data-anijs", "if: click, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim");
 
     });
 
-    /* ======= THEME CONFIG PANEL ====== */
+    /* ======= DEBUT - THEME CONFIG PANEL ====== */
     $('#config-trigger').click(function (e) {
 
         e.preventDefault();
@@ -55,6 +58,15 @@ $(document).ready(function () {
         e.preventDefault();
 
     });
+	/* ======= FIN - THEME CONFIG PANEL ====== */
+	
+	/* Pour une animation des sections lors du scrolling de la page */
+	/*ScrollReveal().reveal('.tile, .section, .item', {
+		interval: 4,
+		delay: 200,
+		reset: true
+	});*/
+	
 
     /* Pour ouvrir ou fermer le sous-detail expérience */
     $(".action-sousDetail, .action-skill").click(function () {

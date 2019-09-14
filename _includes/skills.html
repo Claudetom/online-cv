@@ -1,10 +1,10 @@
-﻿{% assign skills = site.data.data.skills %}
+{% assign skills = site.data.data.skills %}
 {% assign tabSkills = site.data.data.skills.tabSkills %}
 
 {% comment %} doc : https://irz.fr/jekyll-liquid {% endcomment %}
 
 {% if skills and tabSkills %}
-<section class="skills-section section jumpto-block">
+<section class="skills-section section jumpto-block" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: scrollReveal, after: scrollReveal">
 
     <h2 class="section-title">
         <span class="fa-stack fa-xs">
@@ -16,50 +16,48 @@
 
     <div class="skillset">
 
-        {% comment %} parcours le tableau tabSkills {% endcomment %}
-        {% for skill in tabSkills %}
+	  {% comment %} parcours le tableau tabSkills {% endcomment %}
+	  {% for skill in tabSkills %}
+	  
+		  {% comment %} celui-ci est affichable et titre présent {% endcomment %}
+		  {% if skill.isDisplay and skill.title %}
+			
+			{% comment %} le tableau de pratices est-il pas vide {% endcomment %}
+			{% if skill.pratices %}
+			
+			    {% comment %} la section est-elle de type depliable {% endcomment %}
+				{% if skill.closedSection %}
+					<div class="upper-row action-skill" data-id="{{ skill.id }}">
+						<i class="fas fa-angle-double-down"></i>
+						<span class="titleSpecTechnique">{{ skill.title }}</span>
+					</div>
+					
+					<div id="{{ skill.id }}" class="section-skill">
+				{% else %}
+					<div class="upper-row">
+						<h3 class="titleSpecTechnique">{{ skill.title }}</h3>
+					</div>
+					
+					<div id="{{ skill.id }}">
+				{% endif %}
+				
+				{% comment %} parcours le tableau pratices {% endcomment %}
+				{% for pratice in skill.pratices %}
+					<div class="item">
+						<h3 class="level-title">{{ pratice.name }}</h3>
+						<div class="progress level-bar">
+							<div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ pratice.level }}" aria-valuenow="{{ pratice.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+				{% endfor %}
+				</div>
+		    {% endif %}
+			
+		  {% endif %}
+		
+	  {% endfor %}
 
-        {% comment %} celui-ci est affichable et titre présent {% endcomment %}
-        {% if skill.isDisplay and skill.title %}
-
-        {% comment %} le tableau de pratices est-il pas vide {% endcomment %}
-        {% if skill.pratices %}
-
-        {% comment %} la section est-elle de type depliable {% endcomment %}
-        {% if skill.closedSection %}
-        <div class="upper-row action-skill" data-id="{{ skill.id }}">
-            <i class="fas fa-angle-double-down"></i>
-            <span class="titleSpecTechnique">{{ skill.title }}</span>
-        </div>
-
-        {% comment %} balise div d'ouverture repliable {% endcomment %}
-        <div id="{{ skill.id }}" class="section-skill">
-            {% else %}
-            <div class="upper-row">
-                <h3 class="titleSpecTechnique">{{ skill.title }}</h3>
-            </div>
-
-            {% comment %} balise div d'ouverture non repliable {% endcomment %}
-            <div id="{{ skill.id }}">
-                {% endif %}
-
-                {% comment %} parcours le tableau pratices {% endcomment %}
-                {% for pratice in skill.pratices %}
-                <div class="item">
-                    <h3 class="level-title">{{ pratice.name }}</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ pratice.level }}" aria-valuenow="{{ pratice.value }}" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% endif %}
-
-            {% endfor %}
-
-        </div>
+    </div>
 
 </section><!--//skills-section-->
 {% endif %}

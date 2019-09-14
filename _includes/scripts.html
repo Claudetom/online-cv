@@ -1,11 +1,16 @@
 <!-- Javascript -->
-<script type="text/javascript" src="{{site.url}}assets/plugins/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{{ '/assets/plugins/jquery-3.4.1.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 <!-- Menu de navigation vertical -->
-<script type="text/javascript" src="{{site.url}}assets/js/jquery.jumpto.js"></script>
+<script type="text/javascript" src="{{ '/assets/js/jquery.jumpto.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+<!-- AniJS Core File -->
+<script src="{{ '/assets/js/aniJs/anijs-min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<!-- ScrollReveal Helper -->
+<script src="{{ '/assets/js/aniJs/anijs-helper-scrollreveal-min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 <!-- pour l'utilisation du config-panel -->
-<script type="text/javascript" src="{{site.url}}assets/js/main.js"></script>
+<script type="text/javascript" src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 {% if site.analytics %}
   {% include analytics.html %}
