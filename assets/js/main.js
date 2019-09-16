@@ -1,3 +1,17 @@
+var textWatermark = "En recherche";
+
+function watermark(text) {
+	var body = document.getElementsByTagName('body')[0];
+	var bg = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='100px'>" +
+	"<text transform='translate(20, 100) rotate(-45)' fill=' rgb(211,211,211)' font-size='20'>" + text + "</text></svg>\")";
+	
+	var bg2 = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='100px'>" +
+	"<text transform='translate(20, 100) rotate(-45)' fill=' rgba(211,211,211, 0.4)' font-size='20'>" + text + "</text></svg>\")";
+	
+	body.style.backgroundImage = bg;
+	$('.main-wrapper').css('background-image', bg2);
+}
+
 $(document).ready(function () {
 
     $('.level-bar-inner').css('width', '0');
@@ -13,12 +27,10 @@ $(document).ready(function () {
             }, 800);
 
         });
-		
-		/* ajout dynamiquement au objets avec la class section, l'animation avec AniJS */ 
-        //$('.section').attr("data-anijs", "if: click, on:window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim");
-
     });
 
+	watermark(textWatermark);
+	
     /* ======= DEBUT - THEME CONFIG PANEL ====== */
     $('#config-trigger').click(function (e) {
 
