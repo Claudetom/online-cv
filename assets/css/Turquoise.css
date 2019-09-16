@@ -906,3 +906,20 @@ a, a:visited {
         margin-bottom: 0;
     }
 }
+
+/* pour ecran compris entre 100px et 310px */
+@media screen and (min-width: 100px) and (max-width: 310px) {
+	.sidebar-wrapper .profile-container .angleBottomLeft {
+		top: 227px;
+		left: 0px;
+		border-bottom: 40px solid #49A597;
+	}
+}
+/* pour ecran compris entre 310px et 450px */
+@media screen and (min-width: 310px) and (max-width: 450px) {
+	.sidebar-wrapper .profile-container .angleBottomLeft {
+		top: 207px;
+		left: 0px;
+		border-bottom: 40px solid #49A597;
+	}
+}
