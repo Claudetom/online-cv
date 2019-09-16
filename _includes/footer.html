@@ -19,7 +19,13 @@
         <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
         <small class="copyright">{{ footer.text }}</small>
         {% else %}
-        <small class="copyright"> &copy; Claudetom - 2019 - (I realized the CV with <a href="https://jekyllrb.com/" target="_blank" rel="nofollow"> jekyll</a>) </small>
+        <small class="copyright"> &copy; Claudetom - {{ "now" | date: "%Y" }} - (I realized the CV with <a href="https://jekyllrb.com/" target="_blank" rel="nofollow"> jekyll</a>)
+          {% if footer.isDisplayPdf %} -
+		  <span class="printPdf" title="Imprimer le CV en PDF">
+			<i class="fas fa-file-pdf fa-2x"></i>
+		  </span> 
+          {% endif %}
+		</small>
         {% endif %}
     </div><!--//container-->
 </footer><!--//footer-->

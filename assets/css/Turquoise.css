@@ -114,6 +114,32 @@ ol ul {
         color: #fff;
     }
 
+	.sidebar-wrapper .profile-container .angleTopRight{
+		width: 0;
+		height: 0;
+		border-top: 40px solid #4CAC9D;
+		border-left: 40px solid #f4f1f100;
+		float: right;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0px;
+	}
+	
+	.sidebar-wrapper .profile-container .angleBottomLeft{
+		width: 0;
+		height: 0;
+		border-bottom: 40px solid #4AA99A;
+		border-right: 40px solid #f4f1f100;
+		float: left;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		top: 206px;
+		position: absolute;
+	}
+
 	.sidebar-wrapper img {
 		vertical-align: middle;
 		border-style: none;
@@ -531,6 +557,26 @@ ol ul {
         color: #fb866a;
     }
 
+    .footer .printPdf{
+		font-size: 14px;
+		display: inline-block;
+		position: absolute;
+		margin-left: 4px;
+		margin-top: -6px;
+		color: #545E6C;
+		cursor: pointer;
+	}
+
+    .footer .printPdf{
+		font-size: 10px;
+		display: inline-block;
+		position: absolute;
+		margin-left: 4px;
+		margin-top: 0px;
+		color: #35776d;;
+		cursor: pointer;
+	}
+
 /*  - DEBUT - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
 .bars {
     width: 95%;
@@ -825,6 +871,11 @@ a, a:visited {
         position: static;
         width: inherit;
     }
+
+	.sidebar-wrapper .profile-container .angleBottomLeft {
+		top: 187px;
+		border-bottom: 40px solid #49A597;
+	}
 
     .wrapper {
         -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);

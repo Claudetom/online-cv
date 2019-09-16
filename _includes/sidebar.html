@@ -1,19 +1,24 @@
 {% assign sidebar = site.data.data.sidebar %}
 <div class="sidebar-wrapper">
 
-  <div class="profile-container" data-anijs="if: scroll, on:window, do: flipInX animated, before: scrollReveal, after: removeAnim; if: click, do: rubberBand animated, after: removeAnim">
-    {% if sidebar.name %}
-    <img class="avatar" src="{{ '/assets/images/'| append: sidebar.avatar | relative_url }}" alt="profile picture" />
-    {% endif %}
+  <div class="profile-container">
+	<!-- angles topRight et BottomLeft -->
+	<div class="angleTopRight"></div>
+	<div class="angleBottomLeft"></div>
+  
+	<div data-anijs="if: scroll, on:window, do: flipInX animated, before: scrollReveal, after: removeAnim; if: click, do: rubberBand animated, after: removeAnim">
+		{% if sidebar.name %}
+		<img class="avatar" src="{{ '/assets/images/'| append: sidebar.avatar | relative_url }}" alt="profile picture" />
+		{% endif %}
 
-    {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
-    {% endif %}
+		{% if sidebar.name %}
+		<h1 class="name">{{ sidebar.name }}</h1>
+		{% endif %}
 
-    {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
-    {% endif %}
-
+		{% if sidebar.tagline %}
+		<h3 class="tagline">{{ sidebar.tagline }}</h3>
+		{% endif %}
+	</div>
   </div><!--//profile-container-->
 
   {% include contact.html %}
