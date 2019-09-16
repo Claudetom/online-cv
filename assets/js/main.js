@@ -107,5 +107,76 @@ $(document).ready(function () {
         showTitle: "Navigation", // You can customize the title of the jump to menu here. Set to false if you want to hide the title
         closeButton: true // You can choose to show/hide the close button by toggling this to true/false respectively
     });
+	
+	/* Génération du fichier Pdf du contenu Html
+		https://www.freakyjolly.com/jspdf-multipage-example-generate-multipage-pdf-using-single-canvas-of-html-document-using-jspdf/
+	*/
+	function getPDF_old(){
+		//$(".genPdf").show();
+		var elemPdf = $('.wrapper');
+		var HTML_Width = $(elemPdf).width();
+		var HTML_Height = $(elemPdf).height();
+		var top_left_margin = 15;
+		var PDF_Width = HTML_Width+(top_left_margin*2);
+		var PDF_Height = (PDF_Width*1.2)+(top_left_margin*2);
+		var canvas_image_width = HTML_Width;
+		var canvas_image_height = HTML_Height;
+		
+		var totalPDFPages = Math.ceil(HTML_Height/PDF_Height)-1;
+		
+		html2canvas($(elemPdf)[0],{allowTaint:true}).then(function(canvas) {
+			canvas.getContext('2d');
+			
+			console.log(canvas.height+"  "+canvas.width);
+			
+			
+			var imgData = canvas.toDataURL("image/jpeg", 1.0);
+			var pdf = new jsPDF('p', 'pt',  [PDF_Width, PDF_Height]);
+		    pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin,canvas_image_width,canvas_image_height);
+			
+			
+			for (var i = 1; i <= totalPDFPages; i++) { 
+				pdf.addPage(PDF_Width, PDF_Height);
+				pdf.addImage(imgData, 'JPG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height);
+			}
+			
+		    pdf.save("CV-ThomasClaude.pdf");
+			
+			setTimeout(function(){ 			
+				//$(".genPdf").hide();
+			}, 0);
+
+        });
+	};
+	
+	/* Génération du fichier Pdf du contenu Html
+		https://code-examples.net/fr/q/2078fa4
+		http://pdfmake.org/playground.html
+	*/
+	function getPDF(){
+		html2canvas(document.getElementById('Top'), {
+			onrendered: function (canvas) {
+				var data = canvas.toDataURL();
+				var docDefinition = {
+					content: [{
+						image: data,
+						width: 500,
+					}]
+				};
+				//pdfMake.createPdf(docDefinition).print();
+				//pdfMake.createPdf(docDefinition).download("CV-ThomasClaude.pdf");
+				/*var pdf = pdfmake.createPdf(docDefinition);
+				pdf.save("CV-ThomasClaude.pdf");*/
+				//pdf.write('pdfs/CV-ThomasClaude.pdf');
+			}
+		});
+		
+	};
+
+	
+	$('.printPdf').click(function () {   
+		getPDF();
+	});
+
 
 });

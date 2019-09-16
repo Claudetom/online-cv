@@ -113,6 +113,32 @@ ol ul {
         text-align: center;
         color: #fff;
     }
+	
+	.sidebar-wrapper .profile-container .angleTopRight{
+		width: 0;
+		height: 0;
+		border-top: 40px solid #42A8C0;
+		border-left: 40px solid #f4f1f100;
+		float: right;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0px;
+	}
+	
+	.sidebar-wrapper .profile-container .angleBottomLeft{
+		width: 0;
+		height: 0;
+		border-bottom: 40px solid #3CA2BA;
+		border-right: 40px solid #f4f1f100;
+		float: left;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		top: 206px;
+		position: absolute;
+	}
 
 	.sidebar-wrapper img {
 		vertical-align: middle;
@@ -533,6 +559,16 @@ ol ul {
         color: #fb866a;
     }
 
+    .footer .printPdf{
+		font-size: 10px;
+		display: inline-block;
+		position: absolute;
+		margin-left: 4px;
+		margin-top: 0px;
+		color: #2d7788;
+		cursor: pointer;
+	}
+
 
 /*  - DEBUT - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
 .bars {
@@ -829,6 +865,12 @@ a, a:visited {
         width: inherit;
     }
 
+	.sidebar-wrapper .profile-container .angleBottomLeft {
+		top: 187px;
+		border-bottom: 40px solid #369BB4;
+	}
+
+
     .wrapper {
         -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -857,6 +899,7 @@ a, a:visited {
         width: 30%;
         margin-bottom: 0;
     }
+
 }
 
 
