@@ -90,7 +90,10 @@ ol ul {
     color: #fff;
     z-index: 3;
 	/* eviter les interaction */
-	touch-action: none;
+	/*touch-action: none;*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -372,7 +375,10 @@ ol ul {
     .main-wrapper .section {
         margin-bottom: 60px;
 		/* eviter les interaction */
-		touch-action: none;
+		/*touch-action: none;*/
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
 		user-select: none;
     }
 
@@ -556,7 +562,10 @@ ol ul {
 .footer {
     padding: 30px;
 	/* eviter les interaction */
-	touch-action: none;
+	/*touch-action: none;*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 }
 
