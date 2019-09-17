@@ -1,5 +1,5 @@
 /*! 
- * Base du thème :  jekyll
+ * Base du thÃ¨me :  jekyll
  * Version: 2.1
  * Author: Thomas.C
  * Copyright: claudetom
@@ -71,7 +71,7 @@ ol ul {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     /* Ajout mode degrade */
     background-color: #4CAC9D;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4CAC9D), to(#3D8A7E));
     background-image: -webkit-linear-gradient(top, #4CAC9D 0%, #3D8A7E 100%);
     background-image: -moz-linear-gradient(top, #4CAC9D 0%, #3D8A7E 100%);
@@ -89,12 +89,15 @@ ol ul {
     min-height: 800px;
     color: #fff;
     z-index: 3;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;   
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     /* Ajout mode degrade */
     background-color: #4CAC9D;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4CAC9D), to(#3D8A7E));
     background-image: -webkit-linear-gradient(top, #4CAC9D 0%, #3D8A7E 100%);
     background-image: -moz-linear-gradient(top, #4CAC9D 0%, #3D8A7E 100%);
@@ -182,13 +185,12 @@ ol ul {
         margin-bottom: 15px;
     }
 
-
     /* Ajout pour le nouveau design contact */
     .sidebar-wrapper hr {
         margin: 15px auto;
         height: 2px;
         background-color: rgba(0,0,0,0.2);
-        border: none; /*on supprime le style par défaut*/
+        border: none; /*on supprime le style par dÃ©faut*/
     }
 
     .sidebar-wrapper .contact-container .item {
@@ -366,6 +368,9 @@ ol ul {
 
     .main-wrapper .section {
         margin-bottom: 60px;
+		/* eviter les interaction */
+		touch-action: none;
+		user-select: none;
     }
 
     .main-wrapper .degree-title {
@@ -420,7 +425,7 @@ ol ul {
         margin-top: 10px;
     }
 
-        /* Pour les actions du sous détail */
+        /* Pour les actions du sous dÃ©tail */
         .main-wrapper .experiences-section .item .details .action-sousDetail {
             font-size: 18px;
             color: #35776d;
@@ -439,8 +444,9 @@ ol ul {
 
         .main-wrapper .experiences-section .item .details .section-sousDetail {
             display: none;
+			border-bottom: 1px solid lightgrey;
         }
-    /* Pour les actions du sous détail */
+    /* Pour les actions du sous dÃ©tail */
 
     .main-wrapper .project-title {
         font-size: 16px;
@@ -475,13 +481,14 @@ ol ul {
 }
 
     .skillset .upper-row .titleSpecTechnique {
+	    color: #3F4650;	   
         font-size: 18px;
         margin-top: 4px;
         margin-bottom: 10px;
         font-weight: 700;
     }
 
-/* Section compétences repliable */
+/* Section compÃ©tences repliable */
 .skillset .action-skill {
     color: #3F4650;
     font-size: 18px;
@@ -493,7 +500,7 @@ ol ul {
 .skillset .section-skill {
     display: none;
 }
-/* Section compétences repliable */
+/* Section compÃ©tences repliable */
 
 .skillset .level-bar {
     height: 12px;
@@ -545,6 +552,9 @@ ol ul {
 
 .footer {
     padding: 30px;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;  
 }
 
     .footer .copyright {
@@ -558,24 +568,15 @@ ol ul {
     }
 
     .footer .printPdf{
-		font-size: 14px;
-		display: inline-block;
-		position: absolute;
-		margin-left: 4px;
-		margin-top: -6px;
-		color: #545E6C;
-		cursor: pointer;
-	}
-
-    .footer .printPdf{
 		font-size: 10px;
 		display: inline-block;
 		position: absolute;
 		margin-left: 4px;
 		margin-top: 0px;
-		color: #35776d;;
+		color: #35776d;
 		cursor: pointer;
 	}
+
 
 /*  - DEBUT - Ajouter pour le style de barre competences maison  et bouton bas pour remonter */
 .bars {
@@ -866,6 +867,12 @@ a, a:visited {
     background: #3D8A7E;
 }
 
+/* pour le placeHolder lors du dÃ©placement de la section */
+section.sortable-placeholder {
+	border: 1px dashed #CCC;
+	background: none;
+}
+
 @media (max-width: 767.98px) {
     .sidebar-wrapper {
         position: static;
@@ -876,7 +883,6 @@ a, a:visited {
 		top: 188px;
 		border-bottom: 40px solid #49A597;
 	}
-
     .wrapper {
         -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);

@@ -108,6 +108,7 @@ $(document).ready(function () {
 			return false;
 	});
 
+	/* pour le defilement par menu selon les section */
     $(".main-wrapper").jumpto({
         firstLevel: "> h2", // You can define which tag will represent your first level header. The default value is the <h2> tag. Any <h2> tag will automatically be used as a first level link in the menu.
         secondLevel: "> h3", // We also support submenu. Like above, you can define the selector for the second level header to be used in the submenu. Default is false.
@@ -119,6 +120,9 @@ $(document).ready(function () {
         showTitle: "Navigation", // You can customize the title of the jump to menu here. Set to false if you want to hide the title
         closeButton: true // You can choose to show/hide the close button by toggling this to true/false respectively
     });
+	
+	/* pour déplacer les sections */
+	$('.main-wrapper').sortable();
 	
 	/* Génération du fichier Pdf du contenu Html
 		https://www.freakyjolly.com/jspdf-multipage-example-generate-multipage-pdf-using-single-canvas-of-html-document-using-jspdf/

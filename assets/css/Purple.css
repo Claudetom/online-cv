@@ -1,5 +1,5 @@
 /*! 
- * Base du thème :  jekyll
+ * Base du thÃ¨me :  jekyll
  * Version: 2.1
  * Author: Thomas.C
  * Copyright: claudetom
@@ -71,7 +71,7 @@ ol ul {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     /* Ajout mode degrade */
     background-color: #A15277;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#A15277), to(#81425F));
     background-image: -webkit-linear-gradient(top, #A15277 0%, #81425F 100%);
     background-image: -moz-linear-gradient(top, #A15277 0%, #81425F 100%);
@@ -89,12 +89,15 @@ ol ul {
     min-height: 800px;
     color: #fff;
     z-index: 3;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;  
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     /* Ajout mode degrade */
     background-color: #A15277;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#A15277), to(#81425F));
     background-image: -webkit-linear-gradient(top, #A15277 0%, #81425F 100%);
     background-image: -moz-linear-gradient(top, #A15277 0%, #81425F 100%);
@@ -188,7 +191,7 @@ ol ul {
         margin: 15px auto;
         height: 2px;
         background-color: rgba(0,0,0,0.2);
-        border: none; /*on supprime le style par défaut*/
+        border: none; /*on supprime le style par dÃ©faut*/
     }
 
     .sidebar-wrapper .contact-container .item {
@@ -220,6 +223,7 @@ ol ul {
         margin-top: 0;
         font-size: 14px;
     }
+
     /* Ajout pour le nouveau design contact */
 
 
@@ -366,6 +370,9 @@ ol ul {
 
     .main-wrapper .section {
         margin-bottom: 60px;
+		/* eviter les interaction */  
+		touch-action: none;
+		user-select: none;
     }
 
     .main-wrapper .degree-title {
@@ -420,7 +427,7 @@ ol ul {
         margin-top: 10px;
     }
 
-        /* Pour les actions du sous détail */
+        /* Pour les actions du sous dÃ©tail */
         .main-wrapper .experiences-section .item .details .action-sousDetail {
             font-size: 18px;
             color: #6e3852;
@@ -439,8 +446,9 @@ ol ul {
 
         .main-wrapper .experiences-section .item .details .section-sousDetail {
             display: none;
+			border-bottom: 1px solid lightgrey;
         }
-    /* Pour les actions du sous détail */
+    /* Pour les actions du sous dÃ©tail */
 
     .main-wrapper .project-title {
         font-size: 16px;
@@ -482,7 +490,7 @@ ol ul {
         font-weight: 700;
     }
 
-/* Section compétences repliable */
+/* Section compÃ©tences repliable */
 .skillset .action-skill {
     color: #3F4650;
     font-size: 18px;
@@ -494,7 +502,7 @@ ol ul {
 .skillset .section-skill {
     display: none;
 }
-/* Section compétences repliable */
+/* Section compÃ©tences repliable */
 
 .skillset .level-bar {
     height: 12px;
@@ -522,6 +530,11 @@ ol ul {
 .skillset .theme-progress-bar {
     background: #9E5075;
 	/* gradiant et transition */
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -541,6 +554,9 @@ ol ul {
 
 .footer {
     padding: 30px;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;		   
 }
 
     .footer .copyright {
@@ -853,6 +869,12 @@ a, a:visited {
     background: #81425F;
 }
 
+/* pour le placeHolder lors du dÃ©placement de la section */
+section.sortable-placeholder {
+	border: 1px dashed #CCC;
+	background: none;
+}
+
 @media (max-width: 767.98px) {
     .sidebar-wrapper {
         position: static;
@@ -863,6 +885,7 @@ a, a:visited {
 		top: 188px;
 		border-bottom: 40px solid #9B4F72;
 	}
+
 
     .wrapper {
         -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -892,6 +915,7 @@ a, a:visited {
         width: 30%;
         margin-bottom: 0;
     }
+
 }
 
 /* pour ecran compris entre 100px et 310px */
