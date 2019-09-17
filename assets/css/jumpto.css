@@ -17,6 +17,9 @@ body {
     right: 0;
     float: right;
     z-index: 30;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;
 	/* shadow et transition */
 	webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;

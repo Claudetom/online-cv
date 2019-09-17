@@ -1,4 +1,4 @@
-﻿/*! 
+/*! 
  * Base du thème :  jekyll
  * Version: 2.1
  * Author: Thomas.C
@@ -89,6 +89,9 @@ ol ul {
     min-height: 800px;
     color: #fff;
     z-index: 3;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -181,8 +184,6 @@ ol ul {
     .sidebar-wrapper .profile {
         margin-bottom: 15px;
     }
-
-
     /* Ajout pour le nouveau design contact */
     .sidebar-wrapper hr {
         margin: 15px auto;
@@ -220,9 +221,7 @@ ol ul {
         margin-top: 0;
         font-size: 14px;
     }
-
     /* Ajout pour le nouveau design contact */
-
 
     .sidebar-wrapper .contact-list .svg-inline--fa {
         margin-right: 5px;
@@ -367,6 +366,9 @@ ol ul {
 
     .main-wrapper .section {
         margin-bottom: 60px;
+		/* eviter les interaction */
+		touch-action: none;
+		user-select: none;
     }
 
     .main-wrapper .degree-title {
@@ -440,6 +442,7 @@ ol ul {
 
         .main-wrapper .experiences-section .item .details .section-sousDetail {
             display: none;
+			border-bottom: 1px solid lightgrey;
         }
     /* Pour les actions du sous détail */
 
@@ -547,6 +550,9 @@ ol ul {
 
 .footer {
     padding: 30px;
+	/* eviter les interaction */
+	touch-action: none;
+	user-select: none;
 }
 
     .footer .copyright {
@@ -859,6 +865,12 @@ a, a:visited {
     background: #00617f;
 }
 
+/* pour le placeHolder lors du déplacement de la section */
+section.sortable-placeholder {
+	border: 1px dashed #CCC;
+	background: none;
+}
+
 @media (max-width: 767.98px) {
     .sidebar-wrapper {
         position: static;
@@ -869,7 +881,6 @@ a, a:visited {
 		top: 188px;
 		border-bottom: 40px solid #369BB4;
 	}
-
 
     .wrapper {
         -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -902,6 +913,7 @@ a, a:visited {
 
 }
 
+/* pour ecran compris entre 100px et 310px */
 @media screen and (min-width: 100px) and (max-width: 310px) {
 	.sidebar-wrapper .profile-container .angleBottomLeft {
 		top: 227px;
@@ -909,7 +921,7 @@ a, a:visited {
 		border-bottom: 40px solid #369BB4;
 	}
 }
-
+/* pour ecran compris entre 310px et 450px */
 @media screen and (min-width: 310px) and (max-width: 450px) {
 	.sidebar-wrapper .profile-container .angleBottomLeft {
 		top: 207px;
