@@ -124,6 +124,7 @@ $(document).ready(function () {
 	/* pour déplacer les sections */
 	$('.main-wrapper').sortable();
 	
+	//****************************************
 	/* Génération du fichier Pdf du contenu Html
 		https://www.freakyjolly.com/jspdf-multipage-example-generate-multipage-pdf-using-single-canvas-of-html-document-using-jspdf/
 	*/
@@ -142,9 +143,7 @@ $(document).ready(function () {
 		
 		html2canvas($(elemPdf)[0],{allowTaint:true}).then(function(canvas) {
 			canvas.getContext('2d');
-			
 			console.log(canvas.height+"  "+canvas.width);
-			
 			
 			var imgData = canvas.toDataURL("image/jpeg", 1.0);
 			var pdf = new jsPDF('p', 'pt',  [PDF_Width, PDF_Height]);
@@ -193,6 +192,9 @@ $(document).ready(function () {
 	$('.printPdf').click(function () {   
 		getPDF();
 	});
-
+	//****************************************
+	
+	//supprime la marge du dernier élément section (qui n'est pas utile)
+	$( ".main-wrapper .section" ).last().css("margin-bottom", "1px");
 
 });
