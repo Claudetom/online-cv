@@ -1,4 +1,4 @@
-var textWatermark = "En recherche";
+var textWatermark = "Pas disponible";
 
 function watermark(text) {
 	var body = document.getElementsByTagName('body')[0];
