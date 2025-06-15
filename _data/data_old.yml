@@ -1,0 +1,462 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Claude Thomas
+    tagline: Ingénieur études et développement (Microsoft .NET)
+    avatar: Portrait.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar information complémentaires
+    disponibilite: Pas en recherche
+    dateNaissance: Né le 27/08/1970 (49 ans)
+    permis: Titulaire du permis B
+    mobilite: Hauts-de-Seine, Yvelines, Paris, Télétravail
+    typePoste:
+      - name: Ingénieur Logiciel Embarqué
+      - name: Développeur Backend 
+      - name: Développeur Full Stack 
+      - name: Chez un Éditeur de logiciels
+    technologies: ASP.NET, ASP.NET MVC, C#, VB.NET, VB6, HTML/CSS, HTML5/CSS3, AngularJS, JavaScript, jQuery, MySQL, SQL, T-SQL, Xamarin, WCF, API REST
+    
+    # Sidebar links
+    email: thomasclaude.prive@gmail.com
+    phone: +33 (0) 6 07 23 33 50
+    website: #blog.webjeda.com #do not add http://
+    linkedin: claude-thomas-9a094296
+    github: #claudetom
+    gitlab:
+    bitbucket:
+    twitter: #'@claudetom'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+
+    languages:
+      - idiom: Anglais
+        level: Non
+
+      - idiom: Français
+        level: Natif
+
+    interests:
+      - item: Nouvelles technologies
+        link: https://www.futura-sciences.com/tech/technologie/actualites/
+
+      - item: Arduino (Electronique)
+        link: https://www.arduino.cc/
+
+      - item: La robotique
+        link: https://www.usinenouvelle.com/robotique/
+
+      - item: La domotique
+        link: https://www.maison-et-domotique.com/
+
+      - item: Cinéma
+        link: http://www.allocine.fr/film/
+
+      - item: Voyages
+        link: https://www.officiel-des-vacances.com/tout-compris
+
+career-profile:
+    title: Profil
+    summary: |
+      Spécialisé en développement Microsoft .Net, avec une expérience de plus de 15 ans.
+      Capacité à améliorer l'existant en matière de rapidité et de qualité, et de reprendre des projets existants.
+      Force de proposition et à l'écoute des autres.
+      Organisé et autonome avec un fort esprit d’équipe.
+      Évoluer vers un poste de chef de projets.
+
+education:
+    - degree: Développement Web (Html5, Css3, JavaScript)
+      university: ORSYS (La défense – 92)
+      time: mars 2016
+      details: |
+          - Formation au développement web en utilisant l'Html5 le Css3 et le JavaScript.
+
+    - degree: "Développement C#, ASP.NET"
+      university: GFI (Saint Ouen – 93)
+      time: mai 2005
+      details: |
+          - Formation au C# et ASP sur la base d'un back‑office web, réalisé pour la société ENIO.
+
+    - degree: Dessinateur CAO INTEGRA / MENTOR GRAPHICS 
+      university: MENTOR Graphics (Vélizy-Villacoublay – 78)
+      time: avril 1996 – mai 1996
+      details: |
+          - Formation aux logiciels de CAO électronique assisté par ordinateur.
+
+    - degree: BTS Electronique Equipement (niveau) 
+      university: Maryse Bastié (Paris – 75)
+      time: septembre 1987 – juin 1990
+      details: |
+          - Étude d'électronicien d'équipement.
+
+experiences:
+    - role: Ingénieur études et développement
+      time: décembre 2015 – aujourd’hui
+      company: ELEPHANTBIRD SOFTWARE (Paris – 75008)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      indice: sousDetail1
+      metier: Éditeur de logiciels professionnels pour l’immobilier.
+      description: "Spécialisé dans les technologies Internet, conçoit des logiciels innovants pour l'Immobilier et invente les services en ligne de demain."
+      details: |
+        Correction des bugs, ajout et refonte des applications C#, VB, ASP.NET, MVC, PHP.
+        Réalisation d’ajout de fonctionnalités à la demande.
+        Tests finaux pour l’amélioration et rapidité du code et interface.
+        Réalisation et mise à jour de documents techniques (Word).
+      sousDetail: |
+          1. Logiciel : Negopad
+          - Poursuite de la réalisation d'une application web réservée aux agences immobilières.
+          - Corrections et ajouts de nouvelles fonctionnalités, utilisation de bootstrap, jquery, HTML5, Css3, et d'autres composants js.
+          - Développement full Stack, multiplateforme, (Windows 7, 10, Android) pour la partie mobile, utilisation de Xamarin avec une webview, d'un framework maison en C#, qui gère le transfert de données entre différentes sources (Sqlite, SQL serveur, Azure).
+
+          2. Plugiciel : Planning web
+          - Développement d'un planning web, utilisant les composants Kendo UI JS, HTML5, Javascript et jquery, bootstrap, Css3.
+          - Accès aux données SQL server azure par commandes Ajax avec retour au format json par l'utilisation de modèles.
+          - Remaniement du fonctionnement de base des composants Kendo UI JS Scheduler et autres, pour correspondre aux exigences du métier de l'immobilier.
+          - Développé pour une intégration facile par l'ajout d'un patch de mise à jour dans l'application déjà distribuée et utilisée par nos clients.
+          - Possibilité d'utiliser ce planning par d'autres applications Web, en changeant seulement un fichier js interface (Javascript).
+
+          3. Interface web et back : AMEPI
+          - Réalisation des interfaces et back pour le traitement des données du domaine de l'immobilier (recherche et création de Mandats), par échange de données au format JSON, utilisation du design pattern MVC et ASP.NET, C#, Swagger, RestSharp (API REST).
+
+          4. Interface : livre des mandats (HEKTOR)
+          - Réalisation d’interfaces web pour l’affichage des mandats liste et détails, réalisé en PHP qui repose sur des données présentes en base MySql affichage filtré et paginé à la demande.
+
+          5. Interface web et back : FNAIM LEGAL (HEKTOR)
+          - Interface web pour la rédaction et l’obtention des documents juridiques FNAIM, connexion vers OSIDOC, Api sécurisée, réalisé en PHP.
+
+          6. Imports/Exports : (PREVISITE)
+          - Réalisation d’imports et d’exports pour différents formats (XML, JSON, CSV), réalisé l’ajout de class PHP.
+
+    - role: Développeur Analyste et Concepteur
+      time: janvier 2005 – juin 2015 
+      company: ENIO (Asnières - 92)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      indice: sousDetail2
+      metier: Éditeur de logiciels professionnels pour la restauration collective.
+      description: Commercialise des solutions d'encaissement et de gestion pour la restauration collective sur des segments tels que les Entreprises, les Administrations, la Santé, et l’Enseignement.
+      details: |
+        Maintenir et faire évoluer l'application PROCOPE caisse et gestion en VB6, par l’ajout de fonctionnalités selon les demandes du DSI.
+        Poursuivre le développement des applications courantes du type Winforms en VB ou C# , par la correction et l’ajout de nouvelles fonctionnalités.
+        Poursuivre le développement du back office, qui est le système de gestion des clients et convives, données comptables, configuration des caisses, imports/exports, réalisé en Asp .net 3.5 et base SQL 2005/2008 R2.
+        Réalisation de projets en VB6, VB. NET ou C# (Winforms/Web Forms), selon les directives du DSI.
+        Réalisation de tests sur les projets en cours, avant mise en production.
+        Réalisation et mise à jour des documents techniques (Word).
+      sousDetail: |
+          1. Logiciel : PROCOPE CAISSE (Winform VB6)
+          - Ajout de fonctionnalités, liaison série avec systèmes de paiement, imprimantes tickets, communication avec d’autres appareils de distribution, balance connectée (mettler-toledo arriva...) et afficheurs (Epson…).
+          - Amélioration et modification de l’aspect graphique par la création de nouveau usercontrols.
+          - Ajout du pilotage du logiciel de caisse à distance, via la commande du tiroir-caisse et adjonction d’une carte électronique fait selon mes connaissances dans le domaine.
+          - Ajout des spécifications et mode d’utilisation, aux documents utilisateurs format Word.
+
+          2. Logiciel : PROCOPE Reeval (Winform VB. NET)
+          - Ajout de fonctionnalités, au logiciel de réapprovisionnement compte client par badge, logiciel du type borne, nouveaux modes d’encaissements pour une compatibilité optimale avec les TPE (TPE (Moneyline, Ingenico, Sagem, Lem3000, Mpc10, CAD30).
+          - Ajout du support de différents systèmes de monnayeurs (pièces/billets), imprimantes tickets et lecteurs de badges.
+          - Modification de l’aspect graphique par la création de nouveaux composants graphiques et fonctionnels.
+          - Développement du support de la sélection de son plateau-repas au sein même du logiciel de bornes.
+          - Développement du support vers le système de paiement par portail privatisé Web Paybox, pour le réapprovisionnement des comptes convives.
+
+          3. Logiciel : PROCOPE Gestion DA (Winform VB/C#)
+          - Développement de l'application de gestion interfacé aux machines de distributions existantes du marché, commandé par le passage du badge client, accès à la distribution par le solde présent sur le compte du client, accessible via une connexion réseau au serveur de bases.
+          - Pour le sytème de communication, étude conjointe avec un fournisseur de carte électronique, basé sur les protocoles de communication (MDB, Concert, Cctalk, Série), pour le dialogue entre la machine et le logiciel.
+          - Réalisation de l’interface visuelle et du coeur en VB et C# (c++ pour la carte).
+
+          4. Logiciel : PROCOPE WEB (ASP. NET C#)
+          - Poursuite de l’implémentation des couches NHibernate sur le modèle existant.
+          - Ajout de nouvelles fonctionnalités (pages Asp et C#) et procédures d’imports/export utilisant Crystal Report.
+          - Corrections et optimisations des méthodes présentes (refactoring).
+          - Modification de l’interface de sélection (menu) plus ergonomique et accessible.
+          - Modification de la documentation suite à l’ajout de nouvelles spécifications.
+          - Accès aux portails de paiement en ligne, pour l’approvisionnement des comptes clients (convives).
+
+          5. Autres : Logiciels annexes, liste non exhaustive. (VB/C#)
+          - Développement d’une application d’échange de fichiers par FTP (Winform VB. NET).
+          - Développement d’une application (Winform VB. NET) de surveillance d’un parc machines (Caisses/Bornes, système de gestion).
+          - À partir d’un cahier des charges, développement d’un nouveau système d’encaissement en coordination avec le bureau de design de SOGERES (nouvelle charte graphique), réalisé en (Winform VB/C#) données type SQL, communication via liaison série et réseaux, création de l’ensemble des composants graphiques, réécriture complète du noyau caisse passage de VB6 en VB puis C#, nouveau mode de fonctionnement, permettant à un client de choisir lui-même la composition de son plateau-repas jusqu’au paiement. 
+          - Poursuite de l’écriture de procédures stockées (Transact-SQL) de base.
+          - Mise à jour des documents utilisateurs et techniques.
+          - Assistance et télémaintenance sur les produits auprès des clients.
+          - Installation du matériel de la solution informatique et formation des clients sur site.
+          - Migration de certaines sources VB6 vers VB. NET et C#.
+          - Recherche et étude de la meilleure approche pour la conception de projets.
+
+          6. Apport personnel : (Winforms/ Webforms)
+          - Réalisation d'un logiciel d'information déportée via une liaison réseau, affichage des données sur un afficheur Epson, lecteur multiformat série (Badges et ports séries), système de mise à jour par FTP, composants variés en technologie .NET.
+
+    - role: Technicien assistance ‘Hotliner’
+      time: septembre 2002 – juin 2004
+      company: BVRP Software (Pantin - 93)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      indice: sousDetail3
+      metier: Société de service informatique.
+      description:
+      details: |
+          - Assistance téléphonique.
+          - Support client et logiciel pour l'accès à Internet via modem RC/ADSL.
+
+    - role: Électronicien R&D
+      time: octobre 1990 – juin 2002
+      company: Delphi Automotive Systems (Maisons-Alfort – 94)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      indice: sousDetail4
+      metier: Société de réalisation de systèmes électroniques embarqués.
+      description: Bureau d'études industrielles qui produit les systèmes d'alarme de gestion électronique et accessoires du véhicule.
+      details: |
+          - Réalisation et étude de schémas électriques et implantation électronique sur ordinateur.
+          - Réalisation pour tests et contrôles de circuits imprimés et câblages.
+          - Réalisation de bancs de tests complets et de maquettes.
+          - Validation de produits suivants gammes de tests.
+          - Pilotage banc de tests pour les produits TEXALARM en langage TP6 (Turbo Pascal).
+          - Utilisation des logiciels de conception (Pads, Mentor Graphics, intégra).
+      sousDetail: |
+          1. Apport personnel : (Electronique/logiciel)
+          - Banc de tests, sirène sans processeur, détecteur d’approche, allumage auto des feux, verrouillage centralisé.
+          - Documents Excel des spécifications par choix multiples et simplifiés de circuits imprimés de production.
+          - Installation, configuration logiciels et dépannage systèmes informatiques env. Windows.
+
+    - role: Technicien Installateur
+      time: juillet 1990 – septembre 1990
+      company: I.E.D (Paris – 75008)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      metier: Société de distribution et vente de matériel audiovidéos.
+      description: Conseils, installations et maintenance de matériel haut de gamme.
+      details: |
+          - Dépannages, réparations et modifications d’installations.
+          - Installations systèmes hi-fi vidéo et satellite.
+
+          1. Apport personnel : (Electronique)
+          - Réalisation d'un banc de duplication de cassettes vidéo.
+          - Réalisation de bancs de tests complets et de maquettes.
+
+projects:
+    isDisplay: False
+    title: Projects
+    intro: >
+      You can list your side projects or open source libraries in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+
+    assignments:
+      - title: Velocity
+        link: "#hook"
+        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+      - title: DevStudio
+        link: "#"
+        tagline: "A responsive website template designed to help web developers/designers market their services."
+
+      - title: Tempo
+        link: "#"
+        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+      - title: Atom
+        link: "#"
+        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+      - title: Delta
+        link: "#"
+        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+publications:
+    isDisplay: False
+    title: Publications
+    intro: |
+      Description
+
+    papers:
+      - title: aucun
+        authors: Thomas Claude
+        conference: Développement .NET
+
+skills:
+    title: Compétences Techniques
+
+    tabSkills:
+      - title: Développement
+        closedSection: False
+        isDisplay: True
+        id: developpement
+        pratices:
+          - name: C# & VB.NET & VB6
+            level: 95%
+            value: 96
+
+          - name: WPF
+            level: 60%
+            value: 61
+
+          - name: ASP.NET & MVC
+            level: 85%
+            value: 86
+
+          - name: HTML5 & CSS3
+            level: 85%
+            value: 86
+
+          - name: JQUERY & JAVASCRIPT
+            level: 85%
+            value: 86
+
+          - name: Web Service & API / RESTfull
+            level: 85%
+            value: 86
+
+          - name: Framework 4.x & Net Core 2.x/3.0
+            level: 85%
+            value: 86
+
+          - name: BOOTSTRAP & ANGULARJS & Kendo UI JS
+            level: 60%
+            value: 61
+
+          - name:  PHP
+            level: 60%
+            value: 61
+
+          - name: Vue.js
+            level: 20%
+            value: 21
+
+          - name: T-SQL
+            level: 65%
+            value: 66
+
+          - name: XAMARIN
+            level: 60%
+            value: 61
+
+          - name: XML & CSV & JSON
+            level: 85%
+            value: 86
+  
+      - title: Méthodes
+        closedSection: False
+        isDisplay: True
+        id: methodes
+        pratices:
+          - name: DESIGN PATTERNS (MVC)
+            level: 85%
+            value: 86
+
+          - name: AGILE / SCRUM
+            level: 60%
+            value: 61
+
+          - name: UML
+            level: 70%
+            value: 71
+
+      - title: progiciels
+        closedSection: True
+        isDisplay: True
+        id: progiciels
+        pratices:
+          - name: VISUAL STUDIO & VISUAL STUDIO 2017/2019
+            level: 95%
+            value: 96
+
+          - name: VISUAL STUDIO CODE & PHPSTORM
+            level: 60%
+            value: 61
+
+          - name: REPORTBUILDER & Visual Basic MS Office
+            level: 75%
+            value: 76
+
+          - name: CRYSTALREPORT & REDIS / RAVENDB & MONGODB
+            level: 60%
+            value: 61
+
+      - title: Systèmes
+        closedSection: True
+        isDisplay: True
+        id: systemes
+        pratices:
+          - name: WINDOWS 7/10
+            level: 95%
+            value: 96
+
+          - name: ANDROID & LINUX
+            level: 60%
+            value: 61
+
+      - title: Système de gestion de base de données
+        closedSection: True
+        isDisplay: True
+        id: sgbd
+        pratices:
+          - name: SQL SERVER 2017/2019
+            level: 85%
+            value: 86
+
+          - name: MS ACCESS
+            level: 85%
+            value: 86
+
+          - name: SQL AZURE & MySQL
+            level: 60%
+            value: 61
+
+      - title: Outils
+        closedSection: True
+        isDisplay: True
+        id: outils
+        pratices:
+          - name: POSTMAN
+            level: 75%
+            value: 76
+
+          - name: SWAGGER
+            level: 60%
+            value: 61
+
+          - name: VSTS & TFS
+            level: 85%
+            value: 86
+
+          - name: GIT
+            level: 75%
+            value: 76
+
+          - name: OFFICE
+            level: 85%
+            value: 86
+
+      - title: Serveur Web & Protocoles
+        closedSection: True
+        isDisplay: False
+        id: server
+        pratices:
+          - name: WAMPSERVER & VAGRANT & IIS
+            level: 85%
+            value: 86
+
+          - name: FTP
+            level: 85%
+            value: 86
+
+          - name: APACHE & TCPIP & HTTP / HTTPS
+            level: 60%
+            value: 61
+
+# Interets perso
+interests-center:
+    itemLong: |
+      Les nouvelles technologies, carte électronique programmable sur une base d’Arduino, la robotique, la domotique, le cinéma, les voyages.
+
+footer: 
+    isDisplay: False
+    isDisplayPdf: False
+    text: >
+      Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
