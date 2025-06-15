@@ -109,23 +109,22 @@ education:
 
 experiences:
     - role: Développeur Front Office
-    time: janvier 2020 – aujourd’hui
-    company: DEKRA (contrôle technique autos, motos & poids lourds)
-    isDisplayMetier: True
-    isDisplayDescription: True
-    metier: Logiciel de gestion de contrôles techniques
-    description: |
-      Développement d’applications desktop sur PC/tablette Windows.
-    details: |
-      • Conception en WPF, WinForms, et Web (.NET Framework 4.7.2 → .NET 8).  
-      • Communication via WebServices, services Windows, T‑SQL (procédures & requêtes).  
-      • Mise en conformité avec les normes OTC (ministère des Transports).  
-      • Méthode Agile : planification, suivi de sprints, tickets, et corrections collaboratives.  
-      • Réalisation de tests et déploiements après validation hotline.
-
-    sousDetail: |
-      • POC & applications pilotes autonomes pour valider les solutions proposées.  
-      • Propositions d’améliorations UX/logiciel avant intégration au produit principal.
+      time: janvier 2020 – aujourd’hui
+      company: DEKRA (contrôle technique autos, motos & poids lourds)
+      isDisplayMetier: True
+      isDisplayDescription: True
+      indice: sousDetail1
+      metier: Logiciel de gestion de contrôles techniques
+      description: "Développement d’applications desktop sur PC/tablette Windows."
+      details: |
+        • Conception en WPF, WinForms, et Web (.NET Framework 4.7.2 → .NET 8).  
+        • Communication via WebServices, services Windows, T‑SQL (procédures & requêtes).  
+        • Mise en conformité avec les normes OTC (ministère des Transports).  
+        • Méthode Agile : planification, suivi de sprints, tickets, et corrections collaboratives.  
+        • Réalisation de tests et déploiements après validation hotline.
+      sousDetail: |
+          • POC & applications pilotes autonomes pour valider les solutions proposées.  
+          • Propositions d’améliorations UX/logiciel avant intégration au produit principal.
 
     - role: Ingénieur études et développement
       time: décembre 2015 – aujourd’hui
