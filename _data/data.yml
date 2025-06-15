@@ -324,8 +324,8 @@ skills:
             value: 96
 
           - name: WPF
-            level: 60%
-            value: 61
+            level: 80%
+            value: 81
 
           - name: ASP.NET & MVC
             level: 85%
@@ -343,17 +343,17 @@ skills:
             level: 85%
             value: 86
 
-          - name: Framework 4.x & Net Core 2.x/3.0
+          - name: Framework 4.x & Net 8.x
             level: 85%
             value: 86
 
           - name: BOOTSTRAP & ANGULARJS & Kendo UI JS
-            level: 60%
-            value: 61
+            level: 55%
+            value: 56
 
           - name:  PHP
-            level: 60%
-            value: 61
+            level: 40%
+            value: 41
 
           - name: Vue.js
             level: 20%
@@ -393,7 +393,7 @@ skills:
         isDisplay: True
         id: progiciels
         pratices:
-          - name: VISUAL STUDIO & VISUAL STUDIO 2017/2019
+          - name: VISUAL STUDIO 2017/2022
             level: 95%
             value: 96
 
@@ -414,7 +414,7 @@ skills:
         isDisplay: True
         id: systemes
         pratices:
-          - name: WINDOWS 7/10
+          - name: WINDOWS 7/10/11
             level: 95%
             value: 96
 
@@ -427,7 +427,7 @@ skills:
         isDisplay: True
         id: sgbd
         pratices:
-          - name: SQL SERVER 2017/2019
+          - name: SQL SERVER 2017/2022
             level: 85%
             value: 86
 
@@ -452,7 +452,7 @@ skills:
             level: 60%
             value: 61
 
-          - name: VSTS & TFS
+          - name: VSTS & TFS DevOps
             level: 85%
             value: 86
 
