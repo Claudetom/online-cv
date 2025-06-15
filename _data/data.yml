@@ -71,50 +71,50 @@ career-profile:
         Je souhaite évoluer vers un poste de chef de projets.
 
 education:
-    - degree: Développement WPF
-      university: xxxxxxxx
-      time: Avril 2024
+    - degree: C# - DÉVELOPPEMENT AVEC WPF
+      university: M2i 
+      time: 11 au 14 Juin 2024 
       details: |
           - Formation au développement en WPF XAML.
 
     - degree: Développement T-SQL
       university: ORSYS (La défense – 92)
-      time: mars 2023
+      time: Mars 2023
       details: |
           - Formation au développement en SQL.
 
     - degree: Développement Web (Html5, Css3, JavaScript)
       university: ORSYS (La défense – 92)
-      time: mars 2016
+      time: Mars 2016
       details: |
           - Formation au développement web en utilisant l'Html5 le Css3 et le JavaScript.
 
     - degree: "Développement C#, ASP.NET"
       university: GFI (Saint Ouen – 93)
-      time: mai 2005
+      time: Mai 2005
       details: |
           - Formation au C# et ASP sur la base d'un back‑office web, réalisé pour la société ENIO.
 
     - degree: Dessinateur CAO INTEGRA / MENTOR GRAPHICS 
       university: MENTOR Graphics (Vélizy-Villacoublay – 78)
-      time: avril 1996 – mai 1996
+      time: Avril 1996 – Mai 1996
       details: |
           - Formation aux logiciels de CAO électronique assisté par ordinateur.
 
     - degree: BTS Electronique Equipement (niveau) 
       university: Maryse Bastié (Paris – 75)
-      time: septembre 1987 – juin 1990
+      time: Septembre 1987 – Juin 1990
       details: |
           - Étude d'électronicien d'équipement.
 
 experiences:
     - role: Développeur Front Office
-      time: janvier 2020 – aujourd’hui
-      company: DEKRA (contrôle technique autos, motos & poids lourds)
+      time: Janvier 2020 – aujourd’hui
+      company: DEKRA AUTOMOTIVE Le Plessis Robinson 92 
       isDisplayMetier: True
       isDisplayDescription: True
       indice: sousDetail1
-      metier: Logiciel de gestion de contrôles techniques
+      metier: Logiciel de gestion de contrôles techniques (autos, motos & poids lourds)
       description: "Développement d’applications desktop sur PC/tablette Windows."
       details: |
         • Conception en WPF, WinForms, et Web (.NET Framework 4.7.2 → .NET 8).  
@@ -125,13 +125,15 @@ experiences:
       sousDetail: |
           • POC & applications pilotes autonomes pour valider les solutions proposées.  
           • Propositions d’améliorations UX/logiciel avant intégration au produit principal.
+          • Réalisation personnelle de deux sites web dédiés au test de la prise de photos et du scan de codes-barres, dans le cadre d’une étude de remplacement de la méthode actuelle utilisée par notre logiciel PC Aurore (WPF, API Windows).
+          • Développement d'autres applications WPF en vue de proposer des améliorations fonctionnelles et des pistes d’intégration.
 
     - role: Ingénieur études et développement
-      time: décembre 2015 – aujourd’hui
+      time: Décembre 2015 – Septembre 2019
       company: ELEPHANTBIRD SOFTWARE (Paris – 75008)
       isDisplayMetier: True
       isDisplayDescription: True
-      indice: sousDetail1
+      indice: sousDetail2
       metier: Éditeur de logiciels professionnels pour l’immobilier.
       description: "Spécialisé dans les technologies Internet, conçoit des logiciels innovants pour l'Immobilier et invente les services en ligne de demain."
       details: |
@@ -165,11 +167,11 @@ experiences:
           - Réalisation d’imports et d’exports pour différents formats (XML, JSON, CSV), réalisé l’ajout de class PHP.
 
     - role: Développeur Analyste et Concepteur
-      time: janvier 2005 – juin 2015 
+      time: Janvier 2005 – Juin 2015 
       company: ENIO (Asnières - 92)
       isDisplayMetier: True
       isDisplayDescription: True
-      indice: sousDetail2
+      indice: sousDetail3
       metier: Éditeur de logiciels professionnels pour la restauration collective.
       description: Commercialise des solutions d'encaissement et de gestion pour la restauration collective sur des segments tels que les Entreprises, les Administrations, la Santé, et l’Enseignement.
       details: |
@@ -221,11 +223,11 @@ experiences:
           - Réalisation d'un logiciel d'information déportée via une liaison réseau, affichage des données sur un afficheur Epson, lecteur multiformat série (Badges et ports séries), système de mise à jour par FTP, composants variés en technologie .NET.
 
     - role: Technicien assistance ‘Hotliner’
-      time: septembre 2002 – juin 2004
+      time: Septembre 2002 – Juin 2004
       company: BVRP Software (Pantin - 93)
       isDisplayMetier: True
       isDisplayDescription: True
-      indice: sousDetail3
+      indice: sousDetail4
       metier: Société de service informatique.
       description:
       details: |
@@ -233,11 +235,11 @@ experiences:
           - Support client et logiciel pour l'accès à Internet via modem RC/ADSL.
 
     - role: Électronicien R&D
-      time: octobre 1990 – juin 2002
+      time: Octobre 1990 – Juin 2002
       company: Delphi Automotive Systems (Maisons-Alfort – 94)
       isDisplayMetier: True
       isDisplayDescription: True
-      indice: sousDetail4
+      indice: sousDetail5
       metier: Société de réalisation de systèmes électroniques embarqués.
       description: Bureau d'études industrielles qui produit les systèmes d'alarme de gestion électronique et accessoires du véhicule.
       details: |
@@ -254,7 +256,7 @@ experiences:
           - Installation, configuration logiciels et dépannage systèmes informatiques env. Windows.
 
     - role: Technicien Installateur
-      time: juillet 1990 – septembre 1990
+      time: Juillet 1990 – Septembre 1990
       company: I.E.D (Paris – 75008)
       isDisplayMetier: True
       isDisplayDescription: True
