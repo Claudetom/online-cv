@@ -1,4 +1,4 @@
-var textWatermark = "Pas disponible";
+var textWatermark = "Pour propositions";
 
 function watermark(text) {
 	var body = document.getElementsByTagName('body')[0];
