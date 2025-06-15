@@ -12,10 +12,10 @@ sidebar:
     avatar: Portrait.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar information complémentaires
-    disponibilite: Pour propositions
-    dateNaissance: Né le 27/08/1970 (55 ans)
-    permis: Permis B
-    mobilite: Hauts-de-Seine, autres, Télétravail
+    disponibilite: Pas en recherche
+    dateNaissance: Né le 27/08/1970 (49 ans)
+    permis: Titulaire du permis B
+    mobilite: Hauts-de-Seine, Yvelines, Paris, Télétravail
     typePoste:
       - name: Ingénieur Logiciel Embarqué
       - name: Développeur Backend 
@@ -37,11 +37,11 @@ sidebar:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
     languages:
-    - idiom: Français
-      level: Natif
-      
-    - idiom: Anglais
-      level: Scolaire
+      - idiom: Anglais
+        level: Non
+
+      - idiom: Français
+        level: Natif
 
     interests:
       - item: Nouvelles technologies
@@ -65,24 +65,13 @@ sidebar:
 career-profile:
     title: Profil
     summary: |
-        Spécialisé en développement Microsoft .NET, avec plus de 15 ans d’expérience.
-        Capable de reprendre des projets existants et d’en améliorer la qualité et la performance.
-        Force de proposition, organisé, autonome et doté d’un solide esprit d’équipe.
-        Je souhaite évoluer vers un poste de chef de projets.
+      Spécialisé en développement Microsoft .Net, avec une expérience de plus de 15 ans.
+      Capacité à améliorer l'existant en matière de rapidité et de qualité, et de reprendre des projets existants.
+      Force de proposition et à l'écoute des autres.
+      Organisé et autonome avec un fort esprit d’équipe.
+      Évoluer vers un poste de chef de projets.
 
 education:
-    - degree: Développement WPF
-      university: -
-      time: Avril 2024
-      details: |
-          - Formation au développement en WPF XAML.
-
-    - degree: Développement T-SQL
-      university: ORSYS (La défense – 92)
-      time: mars 2023
-      details: |
-          - Formation au développement en SQL.
-
     - degree: Développement Web (Html5, Css3, JavaScript)
       university: ORSYS (La défense – 92)
       time: mars 2016
@@ -108,25 +97,6 @@ education:
           - Étude d'électronicien d'équipement.
 
 experiences:
-    - role: Développeur Front Office
-    time: janvier 2020 – aujourd’hui
-    company: DEKRA (contrôle technique autos, motos & poids lourds)
-    isDisplayMetier: True
-    isDisplayDescription: True
-    metier: Logiciel de gestion de contrôles techniques
-    description: |
-      Développement d’applications desktop sur PC/tablette Windows.
-    details: |
-      • Conception en WPF, WinForms, et Web (.NET Framework 4.7.2 → .NET 8).  
-      • Communication via WebServices, services Windows, T‑SQL (procédures & requêtes).  
-      • Mise en conformité avec les normes OTC (ministère des Transports).  
-      • Méthode Agile : planification, suivi de sprints, tickets, et corrections collaboratives.  
-      • Réalisation de tests et déploiements après validation hotline.
-
-    sousDetail: |
-      • POC & applications pilotes autonomes pour valider les solutions proposées.  
-      • Propositions d’améliorations UX/logiciel avant intégration au produit principal.
-
     - role: Ingénieur études et développement
       time: décembre 2015 – aujourd’hui
       company: ELEPHANTBIRD SOFTWARE (Paris – 75008)
@@ -483,7 +453,7 @@ skills:
 # Interets perso
 interests-center:
     itemLong: |
-      Nouvelles technologies, Arduino, robotique, domotique, cinéma, voyages.
+      Les nouvelles technologies, carte électronique programmable sur une base d’Arduino, la robotique, la domotique, le cinéma, les voyages.
 
 footer: 
     isDisplay: False
